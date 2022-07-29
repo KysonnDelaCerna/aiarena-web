@@ -160,7 +160,7 @@ class UnlinkPatreonView(LoginRequiredMixin, DeleteView):
 class UserProfileUpdateForm(forms.ModelForm):
     class Meta:
         model = User
-        fields = ['first_name', 'last_name', 'receive_email_comms']
+        fields = ['username', 'first_name', 'last_name', 'receive_email_comms']
 
 
 class UserProfileUpdate(SuccessMessageMixin, LoginRequiredMixin, UpdateView):
